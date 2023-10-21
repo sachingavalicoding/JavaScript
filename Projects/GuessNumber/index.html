@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Number</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <h1 id="title">Guess Number</h1>
+  <p> i am thinking of a number between 1 - 100 </p>
+  <p>Can you guess it ? </p>
+  <input type="text" id="guess">
+  <button onclick="check()"> Check Number </button>
+  <h3 id="message">   </h3>
+  <script>
+    const  randomNumber  = Math.floor(Math.random() * 100);
+    let attempts = 0;
+    const check = () => {
+       const guess = parseInt(document.getElementById("guess").value);
+       attempts++;
+       if(guess > 100  || guess < 1 ){
+        alert(' Please Enter Number between 1 to 100 ');
+       }
+       if (guess === randomNumber) {
+                document.getElementById("message").textContent = `Congratulations! You guessed the number ${randomNumber} in ${attempts} attempts.`;
+            } else if (guess < randomNumber) {
+                document.getElementById("message").textContent = "Try a higher number.";
+            } else {
+                document.getElementById("message").textContent = "Try a lower number.";
+            }
+
+    };
+  </script>
+</body>
+
+</html>

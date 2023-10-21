@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lists of strings</title>
+</head>
+<style>
+    .main {
+        width: 600px;
+        height: 400px;
+        margin: 6rem auto;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <ul class="list"></ul>
+    </div>
+    <script>
+        const list = document.querySelector(".list");
+        const listData = [
+            "Happy Birthday!",
+            "Merry Christmas my love",
+            "A happy Christmas to all the family",
+            "You're all I want for Christmas",
+            "Get well soon",
+        ];
+
+        listData.forEach((element) => {
+            let li = document.createElement("li");
+            li.textContent = element.toUpperCase();
+            list.appendChild(li);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&family=Poppins:wght@300&family=Work+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+button{
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background:rgb(112, 85, 248);
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+      
+section{
+
+    width: 80%;
+    margin: 100px auto;
+    min-height: 40rem;
+    border: 1px solid black;
+    text-align: center;
+    padding: 1rem 0.2rem;
+}
+.heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.4rem;
+}
+
+.heading > h3{
+    padding: 0.3rem 1rem;
+    background: black;
+    color: white;
+    width:fit-content;
+}
+p{
+    text-align: left;
+    font-weight: 800;
+    padding: 1rem;
+}
+
+.review__heading{
+    display: grid;
+    grid-template-columns: 70px 1fr 30%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    
+}
+.review__heading > div > h5{
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+span{
+    font-size: 0.8rem;
+}
+
+.wraper__container{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.review{
+    width: 100%;
+    height: 15rem;
+    box-shadow: 0px 0px 2px black;
+    padding: 0.4rem 0.7rem;
+}
+
+.review .review__heading > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}

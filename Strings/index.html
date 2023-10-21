@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations </title>
+</head>
+<body style="display: flex; height: 100vh; align-items: center; justify-content: center; flex-direction: column; gap: 1rem;">
+    <button onclick="show()"> Click me to Show results </button>
+    <p id="greeting"> </p>
+    <p id="Calculation"> </p>
+    <script>
+        const name = prompt(" Enter Your Name : ");
+        const num1 = prompt(" Enter Number 1  : ");
+        const num2 = prompt(" Enter Number 2  : ");
+        function show(){
+            document.getElementById('greeting').textContent = ` Hello ${name} , Good Morning `;
+            document.getElementById('Calculation').textContent = ` Num1 = ${num1} Num2 = ${num2} , Num1 + Num2 = ${num1 + num2} `;
+        }
+    </script>
+</body>
+</html>
